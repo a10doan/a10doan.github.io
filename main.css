@@ -1,0 +1,84 @@
+
+body {
+  background-color: rgba(212, 205, 205, 0.671);
+}
+
+.background_match {
+  background-color: rgba(39, 5, 5, 0.671);
+}
+.navbar { 
+  background-color: white;
+}
+
+.navbar-brand{ 
+  margin-top: -10px;
+  margin-bottom: 10px;
+  background-color: turquoise;
+  font-size: 40px;
+  color: white;
+  margin-left: 30px;
+  padding: 20px;
+  height: 60px;
+}
+
+.plots_button{
+  margin-left: 0px;
+  margin-top: 22px
+  
+}
+
+.data_button{
+  margin-left: 20px;
+  margin-top: 28px;
+}
+
+.comp_button {
+  margin-top: 28px;
+}
+
+.paddington {
+  margin-top: 40px;
+}
+.bottom_paddington {
+  margin-bottom: 0px;
+}
+
+.container_1 {
+  margin-right: 80;
+}
+
+.container_2 {
+  margin-left: 50;
+}
+/* 
+.container.showgrid {
+  background-color: lightgrey;
+  margin-top: 20px;
+}
+
+.row.showgrid {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: blanchedalmond;
+}
+
+.row.showgrid div {
+  border-right: 1px solid red;
+  border-top: 1px solid red;
+  border-bottom: 1px solid red;
+}
+
+.row.showgrid div:first-child {
+  border-left: 1px solid red;
+}
+
+.box {
+  height: 400px;
+  padding: 20px;
+  color: #fff;
+  background: deepskyblue;
+}
+
+.margin-top-80 {
+  margin-top: 80px;
+} */
