@@ -48,8 +48,9 @@ body {
   margin-left: -80;
 }
 
-.container_2 {
-  margin-left: 50;
+.firstcontainer {
+  text-align: center;
+  background-color: white;
 }
 /* 
 .container.showgrid {
