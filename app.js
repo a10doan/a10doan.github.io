@@ -312,7 +312,8 @@ function findMinAndMax(dataColumnX) {
             .html(function(data, i) {
                 var xValue = blah[i];
                 var yValue = bloop[i];
-                return xtext + xValue + " | " + ytext + yValue;
+                var state = stateNames[i];
+                return "State: " + state + " | " + xtext + xValue + " | " + ytext + yValue;
             });
         toolTip.style.pointerEvents = 'none';
         toolTip.style.position = 'absolute';
