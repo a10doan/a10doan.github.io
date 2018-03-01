@@ -312,9 +312,10 @@ function findMinAndMax(dataColumnX) {
             .html(function(data, i) {
                 var xValue = blah[i];
                 var yValue = bloop[i];
-                return xtext + xValue + " " + ytext + yValue;
+                return xtext + xValue + " | " + ytext + yValue;
             });
-
+        toolTip.style.pointerEvents = 'none';
+        toolTip.style.position = 'absolute';
         // Call the tooltip function
         icircles.call(toolTip);
         icircles.on("mouseover", toolTip.show).on("mouseout", toolTip.hide);
