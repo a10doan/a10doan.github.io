@@ -1,88 +1,53 @@
 <!DOCTYPE html>
-<html lang="en-us">
-
+<html lang="en">
 <head>
-
-  <meta charset="UTF-8">
-  <title>Weather Website HW10</title>
-
-  <!-- Bring in our bootstrap stylesheet -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" href="main.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<meta charset="UTF-8">
+	<title>D3Times</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+  <!-- Latest compiled and minified CSS & JS -->
+  <!-- <script src="app.js"></script> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.7.3/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
 </head>
-
 <body>
-    <nav class="navbar">
-        <div class="col-md-2 col-sm-6 col-xs-12">
-            <div class="nav_title">
-                <strong><h3><a class="navbar-brand" href="a10doan.github.io">Latitude</a></h3></strong>
-            </div>
-        </div>
-        <div class="col-md-6 col-sm-12"></div>
-        <div class="col-md-1 col-sm-12 col-xs-12">
-            <div class="plots_button",class="dropdown"><button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Plots
-                    <span class="caret"></span></button>
-                    <ul class="dropdown-menu">
-                        <li><a href="Humidity_Latitude_Page.html">Humidity Data</a></li>
-                        <li><a href="Windspeed_Latitude_Page.html">Windspeed Data</a></li>
-                        <li><a href="Cloudiness_Latitude_Page.html">Cloudiness Data</a></li>
-                        <li><a href="Temperature_Latitude_Page.html">Temperature Data</a></li>
-                    </ul>
-            </div>
-        </div>
-        <div class="col-md-1 col-sm-12 col-xs-12">
-            <div class="comp_button"><a href="Comparisons_Page.html">Comparison</a></div>
-        </div>
-        <div class="col-md-1 col-sm-12 col-xs-12">
-             <div class="data_button"><a href="WeatherPyCSV.html">Data</a></div>
-        </div>
-        <div class="col-md-1 col-sm-12"></div>
-    </nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-12 col-md-offset-0">
+				<h1>D3Times</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12  col-md-9 col-md-offset-0">
+				<div class="jumbotron">
+				<div class="iframeContainer jumbotron">
+					<iframe src="D3.html"></iframe>
+				</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12  col-md-9 col-md-offset-0">
+				<div class="article">
+					This data shows 6 types of information, along the x-axis, shows the data from the U.S. census.  This data reflects the median incomes, levels of education, 
+					and poverty levels of various states.  Along the y-axis, shows the data from the center of disease control (CDC), which is a database consisting of surveys of 
+					american households.  The data was filtered according to topic and specific questions; 'Have you ever been told you have a form of depression?', 'Do you have 
+					any healthcare coverage?', and 'How is your overall health?'.  The first two are binary answers, in which a percentage of the total is calculated per state.  The latter, 
+					only health levels 'fair' and 'poor' are calculated as a percentage of the overall survey. <br><br> As you can see, there is a correlation between overall health and poverty 
+					levels, with an R-square of .90.  What does this mean?  There are many possible meanings behind this, one could surmise that one's perception of health is related 
+					to societal status.  Where someone living at the poverty level, perceives that their health is below average because they intertwine poverty and health statuses. <br><br> Another 
+					explaination can be that these people really are sick and that is a contributing factor to their socioeconomic status.  Which is also a plausable conclusion, given that the 
+					impact on one's ability to keep a job requires that they be well and be able to function at work.
+				</div>
+			</div>
+		</div>
+	</div>
 
-    <div class="col-md-12 col-sm-12"></div>
+		<!-- Footer-->
+	<div id="footer">
+		<p>All materials copyrighted, must obtain written permission by Albert Doan or Trilogy Education Services.</p>
+	</div>
 
-<div class="col-md-12 col-xs-12"><div class="navbar">
-
-    <div class="col-md-6 col-xs-12"><div class="firstcontainer"><h3>Latitudes vs. X: Home Page</h3></div></div>
-    <div class="col-md-1 col-sm-12"></div>
-    <div class="col-md-4 col-xs-12"><div class="firstcontainer"><h3>Visualizations</h3></div></div>
-    <div class="col-md-1 col-sm-12"></div>
-
-    <div class="col-md-12 col-sm-12"></div>
-  
-<div>    
-    <div>
-        <div class="col-md-3 "><div class="navbar">
-                <p><strong><h4>Hw6 WeatherPy:</h4>  Whether financial, political, or social -- data's true power
-                     lies in its ability to answer questions definitively. So let's take what you've learned 
-                     about Python requests, APIs, and JSON traversals to answer a fundamental question: 
-                     "What's the weather like as we approach the equator?"  Now, we know what you may be 
-                     thinking: "Duh. It gets hotter..."  But, if pressed, how would you prove it?</strong></p></div></div>
-        <div class="col-md-3"><div class="navbar"><img src="./WeatherImages/Temperature_vs_Latitude.png" alt="Temp/Lat png" height="210" width="300"></div></div>
-        <div class="col-md-1"></div>
-        <div class="col-md-2"><div class="navbar"><img src="./WeatherImages/Temperature_vs_Latitude.png" alt="Temp/Lat png" height="220" width="230"></div></div>
-        <div class="col-md-2"><div class="navbar"><img src="./WeatherImages/Cloudiness_vs_Latitude.png" alt="Cloud/Lat png" height="220" width="230"></div></div>
-        <div class="col-md-1"></div>
-
-        <div class="col-md-12"></div>
-
-        <div class="col-md-6"><div class="navbar"><strong><p>In this example, you'll be creating a Python script
-           to visualize the weather of 500+ cities across the world of varying distance from the equator. 
-           To accomplish this, you'll be utilizing a simple Python library, the OpenWeatherMap API, and a 
-           little common sense to create a representative model of weather across world cities.
-           Your objective is to build a series of scatter plots to showcase the following relationships:
-           Temperature (F) vs. Latitude
-           Humidity (%) vs. Latitude
-           Cloudiness (%) vs. Latitude
-           Wind Speed (mph) vs. Latitude</p></strong></div></div>
-        <div class="col-md-1"></div>
-        <div class="col-md-2"><div class="navbar"><img src="./WeatherImages/WindSpeed_vs_Latitude.png" alt="Wind/Lat png" height="220" width="230"></div></div>
-        <div class="col-md-2"><div class="navbar"><img src="./WeatherImages/Humidity_vs_Latitude.png" alt="Hum/Lat png" height="220" width="230"></div></div>
-    </div> 
-</div> 
-
-</div></div>
 </body>
-
+</html>
