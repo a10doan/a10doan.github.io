@@ -2,5 +2,6 @@
  * =========
  * Add styling to your d3 chart with this file. */
 body {
-    background: bisque;
+    /* background: bisque; */
+    background: skyblue;
 }
